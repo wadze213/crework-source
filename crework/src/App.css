@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 main{
   width: 100%;
