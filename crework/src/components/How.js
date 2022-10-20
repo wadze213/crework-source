@@ -1,6 +1,6 @@
 import React from 'react'
-import './styles.css'
-import './colors.css'
+import './component-styles/styles.css'
+import './component-styles/colors.css'
 
 const How = () => {
   return (
