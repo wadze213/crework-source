@@ -1,0 +1,218 @@
+.services-card-container{
+  display: flex;
+  gap:2px;
+}
+.services{
+  display: flex;
+  
+  gap: 5rem;
+}
+.services-title{
+  max-width: 1000px;
+  text-align: left;
+}
+.services-title .services-content{
+ padding-top: 30px;
+}
+
+.services-card{
+  font-size: 6rem;
+  padding-right: 10px;
+  margin: 0;
+}
+.servicescard {
+  width: 327px;
+  height:270px;
+
+  background: white;
+  padding: 1.8rem;
+  border: 2px solid #000000;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  
+ }
+ 
+ .servicescard-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+
+ .servicestext-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ /*Text*/
+ .servicestext-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ .servicescard-img{
+  background-image: url(../../images/branding.svg);
+  width: 324px;
+  height: 138px;
+  
+  
+
+ }
+ 
+ .servicescard-img2{
+  background-image: url(../../images/dev.svg);
+  width: 324px;
+  height:138px;
+
+  
+
+ }
+
+ .servicescard-img3{
+  background-image: url(../../images/marketing.svg);
+  width: 324px;
+  height: 138px;
+
+
+ }
+
+
+ .servicestext-title{
+  margin:20px 20px  10px 20px
+ }
+ .servicestext-p{
+padding: 10px 20px;
+text-align: justify;
+font-size: 10px;
+ }
+
+
+ /* Buttons */
+ .cssbuttons-io-button {
+  background:#FC3E6B;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em#FC3E6B;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+ }
+ 
+ .cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em#FC3E6B;
+  right: 0.3em;
+  transition: all 0.3s;
+ }
+ 
+ .cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+ }
+ 
+ .cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color:#FC3E6B;
+ }
+ 
+ .cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+ }
+ 
+ .cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+ }
+ 
+ @media screen and (max-width: 450px){
+
+  .services-title{
+   justify-content: center;
+   align-items: center;
+  }
+.services-content{
+  padding: 30px;
+   font-size: 1rem;
+   text-align: justify;
+  }
+  .cssbuttons-io-button{
+    width: 50%;
+    
+  }
+  .servicescard {
+    width: 300px;
+    height:230px;
+  }
+  .servicescard-img{
+
+    width: 297px;
+    height: 116px;
+  
+   }
+   .servicescard-img2{
+
+    width: 297px;
+    height: 116px;
+  
+   }
+   .servicescard-img3{
+
+    width: 297px;
+    height: 116px;
+  
+   }
+   .servicestext-title {
+    font-size: 1em;
+   
+   }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px){
+  .card-description{
+      right: 15px;
+  }
+  .card-container{
+      margin: 0px 40px
+  }
+}
+@media screen and (max-width: 600px){
+ 
+  
+  .card-container{
+      flex-direction: column;
+      gap: 0.5rem;
+      margin: 0px 20px;
+  }
+  .services-title{
+    justify-content: center;
+    align-items: center;
+   }
+ .services-content{
+   padding: 30px;
+    font-size: 1rem;
+    text-align: justify;
+   }
+   .cssbuttons-io-button{
+     width: 50%;
+     
+   }
+   
+}
