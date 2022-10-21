@@ -1,0 +1,163 @@
+.aboutContainer{
+  display: flex;
+  gap:150px;
+ 
+}
+.about{
+  display: flex;
+  gap: 5rem;
+}
+.aboutTitle{
+  max-width: 1000px;
+  text-align: left;
+}
+.aboutContent{
+  padding: 30px 150px 0 150px;
+  text-align: justify;
+  
+
+}
+
+/* From uiverse.io by @gagan-gv */
+.aboutCard {
+  width: 230px;
+  height: 294px;
+  background: #f0f0f0;
+
+  text-align: center;
+  transition: all 0.5s;
+
+
+ }
+ 
+ .aboutCard:hover {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+  background-color: #4bb8ff;
+ }
+ 
+ .aboutCard .blob {
+  height: 10px;
+  width: 75%;
+  border-radius: 0 0 30px 30px;
+  margin: 0 auto;
+  background-color: #4bb8ff;
+  visibility: visible;
+  transition: all 0.3s;
+ }
+ 
+ .aboutCard:hover .blob {
+  height: 0;
+ }
+ 
+ .aboutCard .img {
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 90px;
+  height: 90px;
+  background-color: #4bb8ff;
+  /* background: url(../icons/zaballero.png); */
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+ .aboutCard .img2 {
+  display: flex;
+  margin: 30px auto 10px auto;
+  width: 90px;
+  height: 90px;
+  background-color: #4bb8ff;
+  /* background: url(../icons/zaballero.png); */
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+ }
+ 
+ .aboutCard:hover .img {
+  width: 230px;
+  height: 200px;
+  border-radius: 0;
+  margin: 0 auto ;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  z-index: 99999;
+  /* background: url(../icons/zaballero2.png); */
+ }
+ 
+ .aboutCard h2 {
+  padding: 0px 10px;
+  font-size: 20px;
+  transition: all 0.1s;
+  z-index: -99;
+  line-height: 17px;
+
+ }
+ 
+ .aboutCard span {
+  font-size: 15px;
+ }
+ 
+ .aboutCard:hover h2 {
+  opacity: 1;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  transition: all 0.5s;
+  font-weight: 900;
+  letter-spacing: 1px;
+ }
+ 
+ .aboutCard>p {
+  opacity: 0;
+  transition: all 0.75s;
+  cursor: pointer;
+  padding:0 40px;
+  margin-top: 0px;
+  cursor: pointer;
+  font-size: 26px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+ 
+ }
+
+ 
+ .aboutCard:hover>p {
+ padding-top: 0px;
+  left: 35px;
+  opacity: 2;
+  transition: all 0.1s;
+ }
+ 
+.github:hover{
+  
+  color:#FC3E6B;
+  transition: all 0.5s;
+}
+.profile:hover{
+  color: #fff;
+  transition: all 0.5s;
+}
+.download:hover{
+  color:#FDA228;
+  transition: all 0.5s;
+}
+.circleContainer {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  position: absolute;
+ }
+ .aboutCard:hover .circleContainer{
+opacity: 0;
+ }
+
+
+.circle {
+  padding: 0 4px;
+  display: flex;
+ }
+ 
