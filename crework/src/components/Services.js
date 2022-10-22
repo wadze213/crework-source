@@ -1,13 +1,14 @@
 import React from 'react'
 import './component-styles/styles.css'
 import './component-styles/services.css'
+import './component-styles/colors.css';
 
 const Services = () => {
   return (
          <section className='services'>
         <div className='services-title'>
    
-            <h2>WHAT CAN WE DO</h2>
+            <h2>WHAT <span className='chunky-underline-orange'>CAN</span> WE DO</h2>
             
             <p className='services-content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
         </div>

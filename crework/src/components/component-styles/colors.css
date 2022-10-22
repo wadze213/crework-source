@@ -22,3 +22,48 @@
 .white-text{
     color: white;
 }
+
+.chunky-underline-orange{
+    display: inline-block;
+    position: relative;
+}
+.chunky-underline-orange::after{
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    background: #FDA228;
+    z-index: -1;
+}
+
+.chunky-underline-blue{
+    display: inline-block;
+    position: relative;
+}
+.chunky-underline-blue::after{
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    background: #1DAAFC;
+    z-index: -1;
+}
+
+.chunky-underline-pink{
+    display: inline-block;
+    position: relative;
+}
+.chunky-underline-pink::after{
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    background: #FC3E6B;
+    z-index: -1;
+}
