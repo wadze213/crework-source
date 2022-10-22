@@ -1,0 +1,23 @@
+.nav-container{
+
+}
+.logo, .nav, .page-nav, .admin-panel{
+    position: fixed;
+}
+.logo{
+    position: fixed;
+    top: 50px;
+    left: 150px;
+}
+.nav{
+    top: 50px;
+    right: 150px;
+}
+.page-nav{
+    bottom: 50px;
+    left: 150px;
+}
+.admin-panel{
+    bottom: 50px;
+    right: 150px;
+}
