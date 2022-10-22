@@ -5,18 +5,23 @@ import Services from '../components/Services'
 import Client from '../components/Client'
 import Join from '../components/Join'
 import About from '../components/About'
+import Navigation from '../components/Navigation'
+import '../components/component-styles/styles.css'
 
 const Home = () => {
-  return (
-    <main>
-        <Landing/>
-        <How/>
-        <Services/>
-        <Client/>
-        <Join/>
-        <About/>
-    </main>
-  )
+
+
+    return (
+        <main id='container'>
+            <Navigation/>
+            <Landing/>
+            <How/>
+            <Services/>
+            <Client/>
+            <Join/>
+            <About/>
+        </main>
+    )
 }
 
 export default Home
