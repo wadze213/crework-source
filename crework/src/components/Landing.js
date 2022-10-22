@@ -1,12 +1,10 @@
 import React from 'react'
 import './component-styles/styles.css';
 import './component-styles/colors.css';
-import Navigation from './Navigation';
 
 const Landing = () => {
   return (
     <section>
-      <Navigation/>
       <div className='landing-container'>
         <h1>A <span className='chunky-underline-blue'>DYNAMIC</span> AGENCY <br></br> FOR YOUR DYNAMIC <span className='chunky-underline-pink'>NEEDS</span></h1>
         <p className='landing-p'>What do you need ?</p>

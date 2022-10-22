@@ -4,7 +4,7 @@ import './component-styles/colors.css'
 
 const How = () => {
   return (
-    <section className='how'>
+    <section className='how' id='howSection'>
         <div className='how-title'>
             <h2>THE PROCESS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate.</p>

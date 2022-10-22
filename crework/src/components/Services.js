@@ -5,7 +5,7 @@ import './component-styles/colors.css';
 
 const Services = () => {
   return (
-         <section className='services'>
+         <section className='services' id='servicesSection'>
         <div className='services-title'>
    
             <h2>WHAT <span className='chunky-underline-orange'>CAN</span> WE DO</h2>

@@ -5,7 +5,7 @@ import '../components/component-styles/join.css'
 
 const Join = () => {
   return (
-    <section className='join'>
+    <section className='join' id='talentSection'>
       <div className='joinContainer'>
           <div>
           <h1 className='joinTitle'>FOR TALENTS</h1>

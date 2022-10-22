@@ -6,7 +6,7 @@ import nextIcon from '../icons/next.png'
 
 const Client = () => {
   return (
-    <section>
+    <section id='clientsSection'>
         <div className='grid-container'>
           <div className='grid-title'>
             <h2>FOR CLIENTS</h2>

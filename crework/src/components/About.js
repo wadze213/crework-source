@@ -11,7 +11,7 @@ import { IconButton, Tooltip } from '@mui/material';
 
 const About = () => {
   return (
-    <section className='about'>
+    <section className='about' id='aboutSection'>
         <div className='aboutTitle'>
           <h2 className='chunky-underline-blue'>ABOUT</h2>
           <p className='aboutContent'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>

@@ -1,23 +1,30 @@
-.nav-container{
-
-}
 .logo, .nav, .page-nav, .admin-panel{
     position: fixed;
+    display: flex;
+    gap: 1rem;
 }
 .logo{
     position: fixed;
     top: 50px;
     left: 150px;
+    background-color: white;
+    z-index: 1000;
 }
 .nav{
     top: 50px;
     right: 150px;
+    background-color: white;
+    z-index: 1000;
 }
 .page-nav{
     bottom: 50px;
     left: 150px;
+    background-color: white;
+    z-index: 1000;
 }
 .admin-panel{
     bottom: 50px;
     right: 150px;
+    background-color: white;
+    z-index: 1000;
 }
