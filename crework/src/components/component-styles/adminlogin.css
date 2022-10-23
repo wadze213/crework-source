@@ -52,3 +52,12 @@ input{
 small{
     font-size: 1.25rem;
 }
+textarea{
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    line-height: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    height: 15ch;
+}
