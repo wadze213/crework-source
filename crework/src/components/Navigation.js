@@ -43,16 +43,17 @@ const Navigation = (prop) => {
         <div className='nav'>
             <StyledLink to="/talents">Talent pool</StyledLink>
             <StyledLink to="/join-us">Join us</StyledLink>
+            <StyledLink to="/contact-us">Contact us</StyledLink>
         </div>
         <div className='page-nav'>
-            <StyledSrollLink to='howSection' smooth={true} duration={500}>The process</StyledSrollLink>
-            <StyledSrollLink to='servicesSection' smooth={true} duration={500}>Our services</StyledSrollLink>
-            <StyledSrollLink to='clientsSection' smooth={true} duration={500}>For clients</StyledSrollLink>
-            <StyledSrollLink to='talentSection' smooth={true} duration={500}>For talent</StyledSrollLink>
-            <StyledSrollLink to='aboutSection' smooth={true} duration={500}>About</StyledSrollLink>
+            <StyledSrollLink to='howSection' smooth={true} duration={500} containerId="homeContainer">The process</StyledSrollLink>
+            <StyledSrollLink to='servicesSection' smooth={true} duration={500}containerId="homeContainer">Our services</StyledSrollLink>
+            <StyledSrollLink to='clientsSection' smooth={true} duration={500}containerId="homeContainer">For clients</StyledSrollLink>
+            <StyledSrollLink to='talentSection' smooth={true} duration={500}containerId="homeContainer">For talent</StyledSrollLink>
+            <StyledSrollLink to='aboutSection' smooth={true} duration={500}containerId="homeContainer">About</StyledSrollLink>
         </div>
         <div className='admin-panel'>
-            <StyledLink to="/admin-panel">Admin</StyledLink>
+            <StyledLink to="/admin-login">Admin</StyledLink>
         </div>
     </div>
   )

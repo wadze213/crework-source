@@ -9,17 +9,15 @@ import Navigation from '../components/Navigation'
 import '../components/component-styles/styles.css'
 
 const Home = () => {
-
-
     return (
-        <main id='container'>
+        <main id='homeContainer'>
             <Navigation/>
             <Landing/>
-            <How/>
-            <Services/>
-            <Client/>
-            <Join/>
-            <About/>
+            <How name="howSection" id="howSection"/>
+            <Services name="servicesSection" id="servicesSection"/>
+            <Client name="clientsSection" id="clientsSection"/>
+            <Join name="talentSection" id="talentSection"/>
+            <About name="aboutSection" id="aboutSection"/>
         </main>
     )
 }
