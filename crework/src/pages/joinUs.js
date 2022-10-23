@@ -1,9 +1,10 @@
 import React from 'react'
+import Form from '../components/Form '
 
 const JoinUs = () => {
   return (
     <div>
-      Join Us
+      <Form/>
     </div>
   )
 }
