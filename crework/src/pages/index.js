@@ -4,6 +4,8 @@ import Home from './home';
 import Admin from './admin'
 import TalentPool from './talenpool';
 import JoinUs from './joinUs'
+import AdminLogin from './adminLogin';
+import Contact from './contact';
 
 const Index = () => {
   return (
@@ -13,6 +15,8 @@ const Index = () => {
             <Route exact path='/' element={<Home/>}></Route>
             <Route exact path='/talents' element={<TalentPool/>}></Route>
             <Route exact path='/join-us' element={<JoinUs/>}></Route>
+            <Route exact path='/contact-us' element={<Contact/>}></Route>
+            <Route exact path='/admin-login' element={<AdminLogin/>}></Route>
             <Route exact path='/admin-panel' element={<Admin/>}></Route>
         </Routes>
       </Router>
