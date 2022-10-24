@@ -1,9 +1,11 @@
 import React from 'react'
+import TalentCard from './TalentCard'
 
 const TalentPool = () => {
   return (
     <div>
-        Talent pool
+        Talentpool.js
+      <TalentCard/>
     </div>
   )
 }
