@@ -1,90 +1,72 @@
-import { useState, useEffect} from 'react'
-import '../components/component-styles/styles.css'
+import React from 'react'
+import './component-styles/styles.css'
+import './component-styles/navigation.css'
+import './component-styles/adminlogin.css'
+import creworkLogo from '../icons/crework-logo-inverted.svg'
+import {useRef,useState,useEffect} from 'react'
 
+const Form  = () => {
+  let firstNameRef = useRef("")
+  let lastNameRef = useRef("")
+  let emailRef = useRef("")
+  let positionRef = useRef("")
+  let bioRef = useRef("")
+  let [id, setId] = useState(Date.now())
+  const [focused,setFocused]= useState(false);
+  
+  let [FormData, setFormData] = useState(localStorage.getItem("joinForm") ? JSON.parse(localStorage.getItem("joinForm")) : [])
 
-
-
-let Input = localStorage.getItem("SignupForm")?
-JSON.parse(localStorage.getItem("SignupForm")):[];
-
-
-const Form = () => {
-
-  const [values,setValues]=useState([Input])
-
-  const input =[
-    {
-      id:1,
-      name:"firstname",
-      type:"text",
-      placeholder:"Enter First name",
-      label:"First name",
-      errorMessage:"Please enter your First name",
-      required:true,
-    },
-    {
-      id:2,
-      name:"lastname",
-      type:"text",
-      placeholder:"Enter Last name",
-      label:"Last name",
-      errorMessage:"Please enter your Last name",
-      required:true,
-    },
-    {
-      id:3,
-      name:"email",
-      type:"email",
-      placeholder:"ex:myname@example.com",
-      errorMessage:"It should be a valid email address!",
-      label:"Email",
-      required:true,
-    },
-    {
-      id:4,
-      name:"Position",
-      type:"text",
-      placeholder:"ex:Graphic Designer",
-      label:"Position",
-      errorMessage:"Please enter your Position",
-      required:true,
-    },
-    {
-      id:5,
-      name:"Bio",
-      type:"text",
-      placeholder:"Enter your bio",
-      label:"Bio",
-      errorMessage:"Please enter your Bio",
-      required:true,
-     
-    },
-  ]
-
-const handleSubmit = (e)=>{
-    e.preventDefault();
-    let info = {
-      fName: document.getElementsByName("firstname").value
-    }
-    console.log(info);
-    setValues({...values,[e.target.name]:e.target.value});
-    }
+  let handleSubmit = (e) => {
+      e.preventDefault();
+      let inquiry = {
+          id: id,
+          firstName: firstNameRef.current.value,
+          lastName: lastNameRef.current.value,
+          email: emailRef.current.value,
+          position: positionRef.current.value,
+          bio:bioRef.current.value
+      }
+      setFormData([...FormData, inquiry])
+  }
   useEffect(() => {
-    localStorage.setItem("SignupForm",JSON.stringify(values))//chores-dependency
-  },[values])
+      localStorage.setItem("joinForm", JSON.stringify(FormData))
+  }, [FormData])
+
 
   return (
-    <div className='forms center-section'>
-      <form  onSubmit={handleSubmit}>
-      <h1>Sign up</h1>
+    <div>
+       <div className='center-section'>
+        <div className='modal'>
+        <img src={creworkLogo} alt=""></img>
+        <h3>Join Crew</h3>
+            <form onSubmit={handleSubmit}>
+                <div className='input-wrapper'>
+                    <label>First name</label>
+                    <input type="text" name="fName" ref={firstNameRef} required focused={focused.toString()}></input>
+                </div>
+                <div className='input-wrapper'>
+                    <label>Last name</label>
+                    <input type="text" name="lName" ref={lastNameRef} required></input>
+                </div>
+                <div className='input-wrapper'>
+                    <label>Email</label>
+                    <input type="text" name="email" ref={emailRef} required></input>
+                </div> <div className='input-wrapper'>
+                    <label>Position</label>
+                    <input type="text" name="lName" ref={positionRef} required></input>
+                </div>
+                <div className='input-wrapper'>
+                    <label>Bio</label>
+                    <textarea type="text" name="message" ref={bioRef} required></textarea>
+                </div>
 
-          
-            
-          <button type='submit' >Create my account</button>
+                <input type="submit" name="submit" value="Join Now" className='btn-black'></input>            
+
             </form>
+        </div>
     </div>
-
+    </div>
   )
 }
 
-export default Form
+export default Form 
