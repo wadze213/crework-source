@@ -3,7 +3,15 @@ import React from 'react'
 const Admin = () => {
   return (
     <div>
-      Admin
+      <div>
+        First box
+      </div>
+      <div>
+        Second box
+      </div>
+      <div>
+        Third box
+      </div>
     </div>
   )
 }
