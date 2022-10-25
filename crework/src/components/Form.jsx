@@ -6,10 +6,12 @@ import creworkLogo from '../icons/crework-logo-inverted.svg'
 import {useRef,useState,useEffect} from 'react'
 
 const Form  = () => {
+
   let firstNameRef = useRef("")
   let lastNameRef = useRef("")
   let emailRef = useRef("")
   let positionRef = useRef("")
+  let positionTypeRef = useRef("")
   let bioRef = useRef("")
   let [id, setId] = useState(Date.now())
   const [focused,setFocused]= useState(false);
@@ -24,6 +26,7 @@ const Form  = () => {
           lastName: lastNameRef.current.value,
           email: emailRef.current.value,
           position: positionRef.current.value,
+          positionType:positionTypeRef.current.value,
           bio:bioRef.current.value
       }
       setFormData([...FormData, inquiry])
@@ -51,10 +54,22 @@ const Form  = () => {
                 <div className='input-wrapper'>
                     <label>Email</label>
                     <input type="text" name="email" ref={emailRef} required></input>
-                </div> <div className='input-wrapper'>
+                </div>
+                <div className='input-wrapper'>
+                    <label for="positionType">Position Type</label><br></br>
+                    <select name="positionType" ref={positionTypeRef}>
+                        <option value="">--Please choose an option--</option>
+                        <option value="Design">Branding & Design</option>
+                        <option value="Dev">Web Development</option>
+                        <option value="Marketing">Marketing & Promotion</option>
+                        
+                    </select>
+                </div>
+                <div className='input-wrapper'>
                     <label>Position</label>
                     <input type="text" name="lName" ref={positionRef} required></input>
                 </div>
+                
                 <div className='input-wrapper'>
                     <label>Bio</label>
                     <textarea type="text" name="message" ref={bioRef} required></textarea>
