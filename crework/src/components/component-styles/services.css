@@ -1,6 +1,6 @@
 .services-card-container{
   display: flex;
-  gap:2px;
+  gap:0px;
 }
 .services{
   display: flex;
