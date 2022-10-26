@@ -1,16 +1,19 @@
 import React from 'react'
+import AdminContact from '../components/AdminContact'
+import AdminJoin from '../components/AdminJoin'
+import AdminTalent from '../components/AdminTalent'
 
 const Admin = () => {
   return (
     <div>
       <div>
-        First box
+        <AdminContact/>
       </div>
       <div>
-        Second box
+        <AdminJoin/>
       </div>
       <div>
-        Third box
+        <AdminTalent/>
       </div>
     </div>
   )
