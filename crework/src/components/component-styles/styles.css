@@ -231,3 +231,13 @@ select {
     border-radius: 10px;
     font-size: 20px;
 }
+.cardMessage{
+    margin: 60px;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    gap: 12px;
+    background: #fff;
+
+
+}

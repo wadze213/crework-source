@@ -1,3 +1,13 @@
+
+.containerIcon{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+margin-top: 5px;
+}
+.containerIcon img{
+  margin-left: 10px;
+}
 .services-card-container{
   display: flex;
   gap:0px;
@@ -47,14 +57,15 @@
  
  /*Text*/
  .servicestext-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
+  
  }
  
  .servicescard-img{
   background-image: url(../../images/branding.svg);
   width: 324px;
-  height: 138px;
+  height: 136px;
   
   
 
@@ -63,7 +74,7 @@
  .servicescard-img2{
   background-image: url(../../images/dev.svg);
   width: 324px;
-  height:138px;
+  height:136px;
 
   
 
@@ -72,7 +83,7 @@
  .servicescard-img3{
   background-image: url(../../images/marketing.svg);
   width: 324px;
-  height: 138px;
+  height: 136px;
 
 
  }
