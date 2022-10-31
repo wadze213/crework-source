@@ -24,6 +24,11 @@ const ContactForm = () => {
             message: messageRef.current.value
         }
         setContactData([...ContactData, inquiry])
+        setId(Date.now())
+        fNameRef.current.value = ""
+        lNameRef.current.value = ""
+        emailRef.current.value = ""
+        messageRef.current.value = ""
     }
     useEffect(() => {
         localStorage.setItem("clients", JSON.stringify(ContactData))

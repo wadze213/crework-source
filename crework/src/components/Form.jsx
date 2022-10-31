@@ -12,6 +12,7 @@ const Form  = () => {
   let emailRef = useRef("")
   let positionRef = useRef("")
   let positionTypeRef = useRef("")
+  let portfolioRef = useRef("")
   let bioRef = useRef("")
   let [id, setId] = useState(Date.now())
   const [focused,setFocused]= useState(false);
@@ -27,9 +28,18 @@ const Form  = () => {
           email: emailRef.current.value,
           position: positionRef.current.value,
           positionType:positionTypeRef.current.value,
+          portfolio: portfolioRef.current.value,
           bio:bioRef.current.value
       }
       setFormData([...FormData, inquiry])
+      setId(Date.now())
+      firstNameRef.current.value = ""
+      lastNameRef.current.value = ""
+      emailRef.current.value = ""
+      positionRef.current.value = ""
+      positionTypeRef.current.value = ""
+      portfolioRef.current.value = ""
+      bioRef.current.value = ""
   }
   useEffect(() => {
       localStorage.setItem("joinForm", JSON.stringify(FormData))
@@ -61,15 +71,17 @@ const Form  = () => {
                         <option value="">--Please choose an option--</option>
                         <option value="Design">Branding & Design</option>
                         <option value="Dev">Web Development</option>
-                        <option value="Marketing">Marketing & Promotion</option>
-                        
+                        <option value="Marketing">Marketing & Promotion</option>  
                     </select>
                 </div>
                 <div className='input-wrapper'>
                     <label>Position</label>
                     <input type="text" name="lName" ref={positionRef} required></input>
                 </div>
-                
+                <div className='input-wrapper'>
+                    <label>Portoflio</label>
+                    <input type="text" name="portofolio" ref={portfolioRef} required></input>
+                </div>
                 <div className='input-wrapper'>
                     <label>Bio</label>
                     <textarea type="text" name="message" ref={bioRef} required></textarea>
