@@ -50,6 +50,8 @@ const AdminTalent = () => {
   return (
     <div className='cardMessage'>
     <TableContainer component={Paper} >
+    <h2>Talent Pool</h2>
+        <p>List of the talents in talent pool and possibility to change availability status</p>
       <Table  stickyHeader aria-label="sticky table">
         <TableHead>
           <TableRow>

@@ -3,7 +3,7 @@ main{
     overscroll-behavior: contain;
     scroll-snap-type: y mandatory; */
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 /* Parent element styling */
 section{
@@ -49,6 +49,9 @@ p{
     font-size: 1rem;
 }
 @media screen and (max-width: 450px){
+    h1{
+        font-size: 2.5rem;
+    }
     h2{
         font-size: 2rem;
     }
@@ -171,6 +174,19 @@ p{
     background-color: #1C93D8;
     cursor: pointer;
     transform: scale(1.05);
+}
+@media screen and (max-width: 450px){
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "title"
+        "image"
+        "service-one"
+        "service-two"
+        "service-three";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
 }
 /* LANDING SECTION */
 .landing-container{

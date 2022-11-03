@@ -41,6 +41,8 @@ const AdminContact = () => {
   return (
     <div className='cardMessage'>
     <TableContainer component={Paper} >
+    <h2>Messages recieved</h2>
+    <p>Check inquiries recieved on the website and respond to project opportunities.</p>
       <Table  stickyHeader aria-label="sticky table">
         <TableHead>
           <TableRow>

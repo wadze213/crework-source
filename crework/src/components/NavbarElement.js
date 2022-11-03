@@ -6,6 +6,7 @@ export const Nav = styled.nav`
 
 background:#000;
 height:80px;
+width: 100%;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -61,7 +62,8 @@ export const NavMenu = styled.ul`
 display:flex;
 align-items:center;
 list-style:none;
-text-align: center;
+gap: 2rem;
+/* text-align: center; */
 
 
 @media screen and (max-width: 600px){

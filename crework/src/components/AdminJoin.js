@@ -47,7 +47,10 @@ const AdminJoin = () => {
 
   return (
     <div className='cardMessage'>
+      
     <TableContainer component={Paper} >
+    <h2>Talent Applications</h2>
+        <p>Check talent applications and eventually add them the to the talent pool</p>
       <Table  stickyHeader aria-label="sticky table">
         <TableHead>
           <TableRow>

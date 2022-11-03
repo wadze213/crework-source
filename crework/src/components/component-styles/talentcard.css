@@ -77,6 +77,15 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap:100px;
  }
+ @media screen and (max-width: 450px){
+  .talent-card-container{
+
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 20px;
+   }
+}
 
  /* Positioncolor */
 

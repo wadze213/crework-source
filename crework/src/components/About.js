@@ -26,7 +26,7 @@ const About = () => {
               <div > <Tooltip title="Portfolio" placement="top"><IconButton className='profile'><FaUser/></IconButton></Tooltip></div>
               <div > <Tooltip title="Download" placement="top"><IconButton className='download'><FaDownload/></IconButton></Tooltip></div>
             </p>
-            <h2>Glenn Zaballero<br></br><span>Co-founder</span></h2>
+            <h2>Danil Cristales<br></br><span>Co-founder</span></h2>
           </div>
           <div class="aboutCard">
           <div class="blob"></div>
