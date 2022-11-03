@@ -103,10 +103,10 @@ const borderImgColor =(item) =>{
        
         <div className={borderImgColor(talent)}></div>
         <div className="card-info">
-          <h3>{talent.firstName + " " + talent.lastName}</h3>
+          <h3>{talent.firstName + " " + talent.lastName }</h3>
           {PositionColor(talent)}
           <p>{talent.bio}</p>
-          <p>{talent.portfolio}</p>
+          <p><a href={talent.portfolio}>{talent.portfolio}</a></p>
         </div>
         {checkAvailable(talent.availability)}
       </div>)
