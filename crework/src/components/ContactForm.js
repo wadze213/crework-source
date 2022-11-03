@@ -4,6 +4,7 @@ import './component-styles/navigation.css'
 import './component-styles/adminlogin.css'
 import creworkLogo from '../icons/crework-logo-inverted.svg'
 import {useRef,useState} from 'react'
+import { sampleContact } from './SampleContent'
 
 const ContactForm = () => {
     let fNameRef = useRef("")
@@ -12,7 +13,7 @@ const ContactForm = () => {
     let messageRef = useRef("")
     let [id, setId] = useState(Date.now())
 
-    let [ContactData, setContactData] = useState(localStorage.getItem("clients") ? JSON.parse(localStorage.getItem("clients")) : [])
+    let [ContactData, setContactData] = useState(localStorage.getItem("clients") ? JSON.parse(localStorage.getItem("clients")) : sampleContact)
 
     let handleSubmit = (e) => {
         e.preventDefault();

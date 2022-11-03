@@ -81,7 +81,28 @@
   transition: all 0.5s;
 }
 @media screen and (max-width: 450px){
+ 
   .joinContainer{
+    display: flex;
     flex-direction: column;
+  
   }
+  .joinContainer h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+  
+  }
+  .joinContainer img{
+    width: 450px;
+    height: 290px;
+    padding: 1rem 0rem;
+  }
+  .joinBox{
+    padding:  0rem;
+    
+  }
+  .join{
+    padding: 30px ;
+  }
+  
 }

@@ -22,6 +22,7 @@ section{
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    padding: 50px 0;
 }
 /* Typography */
 h1{
@@ -226,12 +227,13 @@ button{
     border: 2px solid #FDA228;
 }
 .talentpool-container{
-    padding-top: 150px;
+    padding-top: 50px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 .featured-talent-container{
     display: flex;
@@ -254,6 +256,7 @@ select {
     display: flex;
     gap: 12px;
     background: #fff;
-
-
+}
+.talent-pool-title{
+    text-align: center;
 }

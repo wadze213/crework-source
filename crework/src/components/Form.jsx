@@ -4,6 +4,7 @@ import './component-styles/navigation.css'
 import './component-styles/adminlogin.css'
 import creworkLogo from '../icons/crework-logo-inverted.svg'
 import {useRef,useState,useEffect} from 'react'
+import { sampleJoin } from './SampleContent'
 
 const Form  = () => {
 
@@ -17,7 +18,7 @@ const Form  = () => {
   let [id, setId] = useState(Date.now())
   const [focused,setFocused]= useState(false);
   
-  let [FormData, setFormData] = useState(localStorage.getItem("joinForm") ? JSON.parse(localStorage.getItem("joinForm")) : [])
+  let [FormData, setFormData] = useState(localStorage.getItem("joinForm") ? JSON.parse(localStorage.getItem("joinForm")) : sampleJoin)
 
   let handleSubmit = (e) => {
       e.preventDefault();

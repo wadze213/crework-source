@@ -91,11 +91,6 @@ const borderImgColor =(item) =>{
     )
   }
 }
-
-
-
- 
-  console.log(talentList)
   return (
     <div className='talent-card-container'>
       {TalentData.map((talent) => {

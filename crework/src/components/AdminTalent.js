@@ -11,9 +11,10 @@ import {useState,useEffect} from 'react'
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 import './component-styles/styles.css'
+import { sampleTalent } from './SampleContent';
 
 const AdminTalent = () => {
-  let [TalentData, setTalentData] = useState(localStorage.getItem("talentList") ? JSON.parse(localStorage.getItem("talentList")) : [])
+  let [TalentData, setTalentData] = useState(localStorage.getItem("talentList") ? JSON.parse(localStorage.getItem("talentList")) : sampleTalent)
 
   let handleRemove = (e) =>{
     let num = parseInt(e.target.id);

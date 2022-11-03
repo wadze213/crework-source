@@ -161,3 +161,21 @@ opacity: 0;
   display: flex;
  }
  
+ @media screen and (max-width: 450px){
+    
+  .aboutContainer{
+
+    flex-direction: column;
+    gap:2rem;
+    padding-bottom: 40px;
+   
+  }
+  .aboutContent{
+    padding: 30px 50px 0 50px;
+  
+  }
+  .aboutTitle{
+    padding-left: 20px;
+  }
+ 
+}

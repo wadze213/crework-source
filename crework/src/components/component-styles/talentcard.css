@@ -71,7 +71,7 @@
  }
  
  .talent-card-container{
-  min-width: 1000px;
+  max-width: 1000px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -84,6 +84,9 @@
     grid-template-columns: 1fr;
     padding: 20px;
     margin: 20px;
+   }
+   .talent-card {
+    
    }
 }
 
