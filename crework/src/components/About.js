@@ -22,8 +22,8 @@ const About = () => {
             <span class="img"></span>
             <p>
               
-            <div > <Tooltip title="Github" placement="top"><IconButton className='github'><FaGithub/></IconButton></Tooltip></div>
-              <div > <Tooltip title="Portfolio" placement="top"><IconButton className='profile'><FaUser/></IconButton></Tooltip></div>
+            <div > <a href="https://github.com/wadze213"><Tooltip title="Github" placement="top"><IconButton className='github'><FaGithub/></IconButton></Tooltip></a></div>
+              <div > <a href="https://wadze213.github.io/dcristales.github.io/"><Tooltip title="Portfolio" placement="top"><IconButton className='profile'><FaUser/></IconButton></Tooltip></a></div>
               <div > <Tooltip title="Download" placement="top"><IconButton className='download'><FaDownload/></IconButton></Tooltip></div>
             </p>
             <h2>Danil   Cristales<br></br><span>Co-founder</span></h2>
@@ -33,9 +33,9 @@ const About = () => {
             <span class="img"></span>
             <p>
               
-            <div > <Tooltip title="Github" placement="top"><IconButton className='github'><FaGithub/></IconButton></Tooltip></div>
-              <div > <Tooltip title="Portfolio" placement="top"><IconButton className='profile'><FaUser/></IconButton></Tooltip></div>
-              <div > <Tooltip title="Download" placement="top"><IconButton className='download'><FaDownload/></IconButton></Tooltip></div>
+            <div > <a href="https://gu-ren.github.io/"><Tooltip title="Github" placement="top"><IconButton className='github'><FaGithub/></IconButton></Tooltip></a></div>
+              <div > <a href="https://gu-ren.github.io/Gu-ren-portfolio.github.io/"><Tooltip title="Portfolio" placement="top"><IconButton className='profile'><FaUser/></IconButton></Tooltip></a></div>
+            <div > <Tooltip title="Download" placement="top"><IconButton className='download'><FaDownload/></IconButton></Tooltip></div>
             </p>
             <h2>Glenn Zaballero<br></br><span>Co-founder</span></h2>
           </div>
